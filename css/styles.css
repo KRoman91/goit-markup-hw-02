@@ -1,15 +1,20 @@
 :root {
     --accent-color: #4D5AE5;
+    --headline-color: #2E2F42;
+    --text-color: #434455;
+    --footer-text-color:#E7E9FC;
+    --btn-color: #4D5AE5;
+    --btn-hover-color:#FFFFFF;
+    --background-color: #2E2F42;
+    --team-background-color: #F4F4FD;
     }
-
 body {
     font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
    }
-
 .list {
     list-style: none;
 }
-
 .link {
     text-decoration: none;
 }
@@ -27,7 +32,6 @@ text-transform: uppercase;
 /* IRIS */
 color: #4D5AE5;
 }
-
 .logo-studio {
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
@@ -40,17 +44,29 @@ text-transform: uppercase;
  /* NAVY BLUE */
 color: #2E2F42;
 }
+.footer-logo-studio {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+/* CLOUD */
+color: #F4F4FD;
+}
 /*=================================== /LOGO ====================================*/
 
 /*================================ HEADER ====================================*/
 .header-link {
 font-weight: 500;
-font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
 
 .header-link:hover,
@@ -60,27 +76,24 @@ color: #2E2F42;
 /*=== CONTACT ===*/
 .post-box {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     /* identical to box height, or 150% */
     letter-spacing: 0.02em;
     /* SLATE */
-    color: #434455;
+    color: var(--text-color);
   }
 
 .post-box:hover,
 .post-box:focus {
     color:var(--accent-color);
 }
-
 .phone-number {
 font-weight: 400;
-font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
 /* SLATE */
-color: #434455;
+color: var(--text-color);
 }
 .phone-number:hover,
 .phone-number:focus{
@@ -89,15 +102,19 @@ color: #434455;
 /*================================ /HEADER ====================================*/
 
 /*=================================== HERO ====================================*/
+.hero {
+    background: var(--background-color);
+}
 .hero-text {
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 /* text-align: center; */
 letter-spacing: 0.02em;
-/* color: #FFFFFF; */
+color: #FFFFFF;
 }
 .hero-btn {
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -106,12 +123,12 @@ align-items: center;
 letter-spacing: 0.04em;
 cursor: pointer;
 background-color: #4D5AE5;;
-color: #FFFFFF;
+color: var(--btn-hover-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background-color:#404BBF;
-    color: #FFFFFF;
+    color: var(--btn-hover-color);
 }
 /*=================================== /HERO ====================================*/
 
@@ -122,16 +139,14 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
-
 .heading-text {
 font-weight: 400;
-font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 /* SLATE */
-color: #434455;
+color: var(--text-color);
 }
 /*================================= /HEADING ====================================*/
 
@@ -144,11 +159,18 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
 /*================================= /BENEFITS ===================================*/
 
 /*=================================== TEAM =====================================*/
+.team {
+    background: var(--team-background-color);
+}
+
+.item {
+    background: #FFFFFF;
+}
 .team-title {
 font-weight: 700;
 font-size: 36px;
@@ -158,9 +180,8 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
-
 .team-people {
 font-weight: 500;
 font-size: 20px;
@@ -169,28 +190,24 @@ line-height: 1.2;
 /* text-align: center; */
 letter-spacing: 0.02em;
 /* NAVY BLUE */
-color: #2E2F42;
-
+color: var(--headline-color);
 }
-
 .profecia {
 font-weight: 400;
-font-size: 16px;
 line-height: 1.5;
 /* text-align: center; */
 letter-spacing: 0.02em;
 /* SLATE */
-color: #434455;
-
+color: var(--text-color);
 }
 /*================================== /TEAM =====================================*/
 
-/*================================= FIRST SECTION ==============================*/
+/*================================= PROMO-SECTION ==============================*/
 .btn {
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-/* identical to box height, or 150% */
 display: flex;
 align-items: center;
 text-align: center;
@@ -198,13 +215,13 @@ letter-spacing: 0.04em;
 cursor: pointer;
 background-color:#F4F4FD;
 /* IRIS */
-color: #4D5AE5;
+color: var(--btn-color);
 }
 
 .btn:hover,
 .btn:focus {
     background-color:#404BBF;
-    color:  #FFFFFF;
+    color:  var(--btn-hover-color);
 }
 
 .first-title {
@@ -214,7 +231,7 @@ line-height: 1.2;
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
 
 .first-text-title {
@@ -224,13 +241,8 @@ line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
 /* SLATE */
-color: #434455;
-
+color: var(--text-color);
 }
-
-/*================================= /FIRST SECTION ==============================*/
-
-/*================================= SECOND SECTION ==============================*/
 .second-title {
 font-weight: 500;
 font-size: 20px;
@@ -238,7 +250,7 @@ line-height: 1.2;
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
 .second-text-title {
 font-weight: 400;
@@ -247,12 +259,9 @@ line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
 /* SLATE */
-color: #434455;
+color: var(--text-color);
 }
 
-/*================================= /SECOND SECTION ==============================*/
-
-/*================================= THIRD SECTION ==============================*/
 .third-title {
 font-weight: 500;
 font-size: 20px;
@@ -260,7 +269,7 @@ line-height: 1.2;
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
 /* NAVY BLUE */
-color: #2E2F42;
+color: var(--headline-color);
 }
 .third-text-title {
 font-weight: 400;
@@ -269,19 +278,22 @@ line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
 /* SLATE */
-color: #434455;
+color: var(--text-color);
 }
 
-/*================================= /THIRD SECTION ==============================*/
+/*================================= /PROMO-SECTION ==============================*/
 
 /* ============================== FOOTER ====================================== */
+.footer {
+    background: var(--background-color);
+}
 .footer-text {
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 /* CORNFLOWER */
-/* color: #E7E9FC; */
+color: var(--footer-text-color);
 }
 /* ============================== /FOOTER ====================================== */
